@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>Insomnia</title>
@@ -8,144 +8,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    <style type="text/css">
-        html,
-        body,
-        p,
-        div,
-        img,
-        h1,
-        h2,
-        h3,
-        h4,
-        ol,
-        dl,
-        dd,
-        dt,
-        form,
-        table,
-        td,
-        tr {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            border-collapse: separate;
-            border-spacing: 0;
-        }
-
-        h1 {
-            text-align: center;
-            font-weight: bold;
-        }
-
-        html {
-            background-color: #131313;
-            color: #838383;
-            /* font-family: 'Lato', sans-serif; */
-            /* font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; */
-            /* font-family: "Open Sans", sans-serif; */
-            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
-
-        p {
-            margin-bottom: 1em;
-        }
-
-        ul li p {
-            margin-bottom: 0;
-        }
-
-        div {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            font-size: 100%;
-        }
-
-        a {
-            color: rgb(0, 150, 207);
-            ;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            border: 10px solid #000000;
-            border-radius: 10px;
-        }
-
-        div#logo {
-            width: 100%;
-            text-align: center;
-            font-size: 200%;
-        }
-
-        div#logo a {
-            text-decoration: none;
-            color: rgb(115, 116, 128);
-        }
-
-        div#content {
-            width: 100%;
-        }
-
-        div#content div#innercontent {
-            max-width: 80ch;
-            margin: auto;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-    </style>
-
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        /* margin: 0;
+        font-family: Arial; */
+
+        max-width: 80%;
+        margin: auto;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+
+    html {
+        /* background-color: #131313; */
+        background-color: black;
+        color: #838383;
+        /* font-family: 'Lato', sans-serif; */
+        /* font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; */
+        /* font-family: "Open Sans", sans-serif; */
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 33.33%;
+        /* IE10 */
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    a {
+        color: #7e1c1c;
+    }
+</style>
 
 <body>
-    <div id="logo">
-        <a href="/">INSOMNIA</a>
-    </div>
-    <div id="content">
-        <div id="innercontent">
 
-            <img src="img/insomnia_01.jpg" alt="Entry screen">
+    <header class="main-header" role="banner">
+        <img src="img/banner.jpg" alt="Banner Image" />
+    </header>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+    <p>Insomnia is a survival horror FPP game built around detective plot to find a missing lady. The game takes place
+        in desolate mines of the Owl Mountains where a player is challanged with logic puzzles, creepy minions and dark
+        corners of his own mind. The main inspiration for this project was Penumbra series created by Frictional Games.
+    </p>
 
-            <img src="img/insomnia_02.jpg" alt="Entry screen">
+    <p>The main focus when creating Insomnia was on building horror atmosphere through claustrophobic
+        graphics, unsafe music and complex player-environment interactions. The game incorporates JiglibX physics engine
+        for the latter one which allowed character controlling, stepping down ladders or pushing and throwing objects.
+        Insomnia uses basic AI system to control creatures which reacts correspondingly to players actions. The game
+        contains a lockpicking minigame and dynamic journal system.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+    <p>Insomnia was written in C# using XNA 3.1 framework together with Grzesiek Kocyk and <a href="https://stasiak.at">Jakub Stasiak</a> as an
+        university project. As such, it took part in a local competition and was distincted for remarkable atmosphere. I
+        was responsible for the engine architecture, graphics rendering and physics integration.</p>
 
-            <img src="img/insomnia_03.jpg" alt="Entry screen">
-            <img src="img/insomnia_04.jpg" alt="Entry screen">
-            <img src="img/insomnia_05.jpg" alt="Entry screen">
-            <img src="img/insomnia_06.jpg" alt="Entry screen">
-            <img src="img/insomnia_07.jpg" alt="Entry screen">
-            <img src="img/insomnia_08.jpg" alt="Entry screen">
-            <img src="img/insomnia_09.jpg" alt="Entry screen">
-            <img src="img/insomnia_10.jpg" alt="Entry screen">
-            <img src="img/insomnia_11.jpg" alt="Entry screen">
-            <img src="img/insomnia_12.jpg" alt="Entry screen">
-
+    <div class="row">
+        <div class="column">
+            <img src="img/insomnia_01.jpg" style="width:100%">
+            <img src="img/insomnia_02.jpg" style="width:100%">
+            <img src="img/insomnia_03.jpg" style="width:100%">
+            <img src="img/insomnia_04.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/insomnia_05.jpg" style="width:100%">
+            <img src="img/insomnia_06.jpg" style="width:100%">
+            <img src="img/insomnia_07.jpg" style="width:100%">
+            <img src="img/insomnia_08.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/insomnia_09.jpg" style="width:100%">
+            <img src="img/insomnia_10.jpg" style="width:100%">
+            <img src="img/insomnia_11.jpg" style="width:100%">
+            <img src="img/insomnia_13.jpg" style="width:100%">
         </div>
     </div>
+
 </body>
 
 </html>
