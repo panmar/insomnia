@@ -15,10 +15,7 @@
     }
 
     body {
-        /* margin: 0;
-        font-family: Arial; */
-
-        max-width: 80%;
+        max-width: 90ch;
         margin: auto;
         padding-left: 2%;
         padding-right: 2%;
@@ -26,12 +23,8 @@
 
 
     html {
-        /* background-color: #131313; */
         background-color: black;
         color: #838383;
-        /* font-family: 'Lato', sans-serif; */
-        /* font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; */
-        /* font-family: "Open Sans", sans-serif; */
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         line-height: 1.6;
         padding-top: 1em;
@@ -45,16 +38,15 @@
         -ms-flex-wrap: wrap;
         /* IE10 */
         flex-wrap: wrap;
-        padding: 0 4px;
+        padding: 0 16px;
     }
 
-    /* Create four equal columns that sits next to each other */
     .column {
         -ms-flex: 33.33%;
         /* IE10 */
         flex: 33.33%;
         max-width: 33.33%;
-        padding: 0 4px;
+        padding: 0 8px;
     }
 
     .column img {
@@ -63,7 +55,6 @@
         width: 100%;
     }
 
-    /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
         .column {
             -ms-flex: 50%;
@@ -72,12 +63,16 @@
         }
     }
 
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
         .column {
             -ms-flex: 100%;
             flex: 100%;
             max-width: 100%;
+        }
+
+        header>img {
+            width: 100% !important;
+            height: auto !important;
         }
     }
 
@@ -114,7 +109,8 @@
         Insomnia uses basic AI system to control creatures which reacts correspondingly to players actions. The game
         contains a lockpicking minigame and dynamic journal system.</p>
 
-    <p>Insomnia was written in C# using XNA 3.1 framework by Grzegorz Kocjan, <a href="https://marcinpanasiuk.com">Marcin
+    <p>Insomnia was written in C# using XNA 3.1 framework by Grzegorz Kocjan, <a
+            href="https://marcinpanasiuk.com">Marcin
             Panasiuk</a> and <a href="https://stasiak.at">Jakub Stasiak</a> as an university project. As such, it took
         part in a local competition and was distincted for remarkable atmosphere.
     </p>
