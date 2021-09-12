@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         max-width: 80ch;
         margin: auto;
@@ -26,23 +30,8 @@
         padding-bottom: 1em;
     }
 
-    .row {
-        display: -ms-flexbox;
-        /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap;
-        /* IE10 */
-        flex-wrap: wrap;
-        padding: 0 16px;
-    }
-
     header {
         text-align: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-
-    .photo-gallery {
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -52,28 +41,46 @@
         text-decoration: none;
     }
 
-    .row>img {
-        width: 33%;
-        padding: 5px;
-        box-sizing: border-box;
+    .photo-gallery {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 16px;
+        justify-content: center;
+    }
+
+    .row>.item {
+        padding: 2px;
+        width: 33.33%;
+    }
+
+    .row>.item>img {
+        width: 100%;
+        border-radius: 8%;
+        border-width: 5%;
+        border-style: solid;
+        border-color: #000000;
     }
 
     @media screen and (max-width: 800px) {
-        .row>img {
+        .row>.item {
             width: 50%;
             padding: 5px;
         }
     }
 
     @media screen and (max-width: 600px) {
-        .row>img {
+        .row>.item {
             width: 100%;
             padding: 5px;
-        }
-
-        header>img {
-            width: 100% !important;
-            height: auto !important;
         }
     }
 </style>
@@ -103,18 +110,18 @@
 
     <div class="photo-gallery">
         <div class="row">
-            <img src="img/insomnia_01.jpg">
-            <img src="img/insomnia_02.jpg">
-            <img src="img/insomnia_03.jpg">
-            <img src="img/insomnia_04.jpg">
-            <img src="img/insomnia_05.jpg">
-            <img src="img/insomnia_06.jpg">
-            <img src="img/insomnia_07.jpg">
-            <img src="img/insomnia_08.jpg">
-            <img src="img/insomnia_09.jpg">
-            <img src="img/insomnia_10.jpg">
-            <img src="img/insomnia_11.jpg">
-            <img src="img/insomnia_12.jpg">
+            <div class=item><img src="img/insomnia_01.jpg"></div>
+            <div class=item><img src="img/insomnia_02.jpg"></div>
+            <div class=item><img src="img/insomnia_03.jpg"></div>
+            <div class=item><img src="img/insomnia_04.jpg"></div>
+            <div class=item><img src="img/insomnia_05.jpg"></div>
+            <div class=item><img src="img/insomnia_06.jpg"></div>
+            <div class=item><img src="img/insomnia_07.jpg"></div>
+            <div class=item><img src="img/insomnia_08.jpg"></div>
+            <div class=item><img src="img/insomnia_09.jpg"></div>
+            <div class=item><img src="img/insomnia_10.jpg"></div>
+            <div class=item><img src="img/insomnia_11.jpg"></div>
+            <div class=item><img src="img/insomnia_12.jpg"></div>
         </div>
     </div>
 
